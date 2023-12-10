@@ -3,16 +3,23 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Adam The Programmer::HOME </title>
+        <title>Adam The Programmer::Game </title>
     <meta name="description" content="This is the home page for Adam The Programmer where I talk about my goals and what I have learned so far made by Adam Chughtai">
-        <link rel="stylesheet" href="style.css">
+        <!-- FontAwesome Stylesheet-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap Stylesheet-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-<!-- Place this CSS into the <head> section-->
+        <!-- CSS Stylesheet-->
+        <link rel="stylesheet" href="style.css">
+
+    <!-- Place this CSS into the <head> section-->
    <style>
       canvas {
       border: 1px solid #d3d3d3;
       background-color: #f1f1f1;
+      width: 100%; 
+      max-width: 640px; 
+      height: auto; 
       }
    </style>
 </head>
@@ -37,9 +44,13 @@
     <div id="home-hero">
         <h1>FLAP ME</h1> 
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
         <h2>I made this flappy mine while following the W3 School Java Script Tutorial that my professor has provided and I added my own character and my world into it to fit my website.I have also changed the sizing and designed my button via CSS.
         </h2>
-
+        </div>
+    </div>
 
 <main>
     <div id="game" ></div>
@@ -50,9 +61,10 @@
         <script>
 
         /* Add variables for the height and width */
-var canvasWidth = 640;
-var canvasHeight = 360;
-        /*Test to see if I have a screen less than 768 pixels and if so, change the canvas size */
+        var canvasWidth = 640;
+        var canvasHeight = 360;
+
+         /*Test to see if I have a screen less than 768 pixels and if so, change the canvas size */
 if (window.innerWidth < 768){
 	canvasWidth = 300;
 	canvasHeight= 300;
@@ -64,7 +76,7 @@ if (window.innerWidth < 768){
            var myScore;
            
            function startGame() {
-               myGamePiece = new component(30, 30, "image/Pixilart - Steve Head.jpg", 10, 120,"image");
+               myGamePiece = new component(30, 30, "image/minecraft-steve.jpg", 10, 120,"image");
                myGamePiece.gravity = 0.05;
                myScore = new component("30px", "Consolas", "white", 420, 40, "text");
                myGameArea.start();
@@ -78,7 +90,7 @@ if (window.innerWidth < 768){
         this.canvas.height = 450;
         this.context = this.canvas.getContext("2d");
 
-        this.backgroundImage.src = "image/siluette-702178_1280.jpg";
+        this.backgroundImage.src = "image/game-background.jpg";
         this.context.drawImage(this.backgroundImage, 0, 0, this.canvas.width, this.canvas.height);
 
         var myGame = document.getElementById("game");
@@ -208,6 +220,7 @@ if (window.innerWidth < 768){
                 transition: background-color 0.3s;
                 margin: 0 auto;
             }
+
             <!--There are two versions of controls...one for desktop that uses a mouse and one for mobile devices The desktop has the desktop class and the mobile has the mobile class-->
 <div class="game-controls desktop">
 	<button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
@@ -238,8 +251,8 @@ if (window.innerWidth < 768){
                     <a href="https://instagram.com/peeple.official?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
                         <h4><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</h4>
                     </a>
-                    <a href="https://twitter.com/peeple.official?s=21&t=KRSXFEzd2v-u5WnswTxFg" target="_blank">
-                        <h4><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</h4>
+                    <a href="https://dumbru.github.io/AdamTheProgrammer/" target="_blank">
+                        <h4><i class="fa fa-github" aria-hidden="true"></i>    Github</h4>
                     </a>
             </div> 
         </div>
@@ -250,7 +263,7 @@ if (window.innerWidth < 768){
 
 </footer>
 
-    <!--jQuery, Popper, and Bootstrap Javascript files-->
+<!--jQuery, Popper, and Bootstrap Javascript files-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
