@@ -1,0 +1,169 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family Montserrat:ital,wght@0,300;1,300;1,600&display=swap'); 
+body{ 
+    font-family: 'Montserrat', sans-serif; 
+} 
+
+/* Vertical Navigation bar */ 
+
+a:link{ 
+    color:purple 
+} 
+a:visited{ 
+    color:purple; 
+} 
+a:hover{ 
+    color:blue; 
+} 
+a:active{ 
+    color:black; 
+} 
+nav ul{ 
+    list-style-type: none;
+    text-align: center; 
+} 
+nav li{ 
+    display: inline; 
+} 
+nav a{ 
+    text-decoration: none; 
+    padding-right: 10px; 
+} 
+nav a:link{ 
+    color: purple; 
+} 
+nav a:visited{ 
+    color: pink; 
+} 
+nav a:hover{ 
+    color: gray; 
+} 
+nav a:active{ 
+    color: black; 
+} 
+@media only screen and (max-width: 1024px)
+{
+h1{ 
+    font-size: 2em; } 
+} 
+@media only screen and (max-width: 768px){
+h1{ 
+    font-size: 1.5em; } 
+}
+h1{ 
+    text-align: center; 
+    font-size: 4em;
+    color: #724c00; 
+} 
+h2{
+    text-align: center; 
+    border-top: 1px solid gray; 
+    padding: 10px; 
+    background: linear-gradient background: rgb(34,195,52); 
+    background: linear-gradient(0deg, rgba(34,195,52,1) 0%, rgba(166,83,0,1) 100%); 
+}  
+
+nav{ 
+    background-color: brown; 
+    border-top: 1px green solid; 
+    border-bottom: 1px brown solid; 
+    padding: 5px; background: linear-gradient background: rgb(34,195,52); 
+    background: linear-gradient(0deg, rgba(34,195,52,1) 0%, rgba(166,83,0,1) 100%); 
+} 
+body{
+     font-family: 'Source Sans Pro', sans-serif;
+      margin: 0; 
+} 
+
+
+main{ 
+    max-width: 1000px; 
+    margin: 20px auto;
+} 
+index-p{
+    margin-right: 400px;
+}
+.player{
+    float: right;
+}
+footer{ 
+    text-align: center; 
+    border-top: 1px solid gray; 
+    padding: 10px; 
+    background: linear-gradient background: rgb(34,195,52); 
+    background: linear-gradient(0deg, rgba(34,195,52,1) 0%, rgba(166,83,0,1) 100%); } 
+footer a { 
+    color: #FFFFFF;
+} 
+.logo{
+    max-width: 275px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+.woman{
+    float:right;
+    margin: bottom 50px;
+}
+#home-hero{ 
+    background-image: url(images/guitars.jpg); 
+    height: 400px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    text-align: center; 
+} 
+#home-hero h1{ 
+    color: green; 
+    text-shadow: 2px 2px 2px black; 
+    margin: 0; 
+    padding: 10px; 
+    background-color: rgba(0,0,0,.5); 
+    text-align: center; 
+} 
+table{ 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    border: 5px solid #000000; 
+} 
+tr:nth-child(even) { 
+    background-color: #eeeeee;
+} 
+th{ 
+    background-color: #724c00; 
+    color: white; 
+    border-bottom: 5px solid #000000; 
+    padding: 10px; 
+} 
+td{ 
+    border: 1px solid #039f00; 
+    padding: 10px; 
+} 
+form{
+    border: 5px solid black;
+    text-align: center;
+    background-color: #039f00;
+}
+
+label{ 
+    float: center; 
+    width: 8em; 
+    padding-right: 1em; 
+    text-align: center;
+} 
+(input,textarea){ 
+    margin-bottom: 1em;  
+    padding: 10px;
+    display: block;
+} 
+input[type=submit]{ 
+    display: block; 
+    background-color: purple;
+    padding: 10px;
+    margin-left: 450px;
+}
+.map{
+    margin: 0 auto;
+    justify-content: center;
+}
